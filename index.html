@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+  background:#1a1a1a;
+  height:820px;
+}
+
+.card {
+  background:#333333;
+  width:450px;
+  height:720px;
+  border-radius:15px;
+  margin:auto;
+  margin-top:8%;
+}
+
+img {
+  width:29%;
+  border-radius:50%;
+  margin-left:35%;
+  margin-top:14%;
+}
+
+.text1,.text2,.text3,li,a{font-family:arial;}
+.text1{color:white;font-size:30px;margin-top:8%;position:relative;left:29%;}
+
+.text2{
+  color:hsl(75, 100%, 60%);margin-left:24%;
+}
+.text3{color:#fff;font-size:15px;margin-left:20%;top:3%;position:relative;}
+ul {
+  display:grid;
+  height:400px;
+  margin-left:2%;
+  margin-top:10%;
+  font-size:15px;
+    grid-gap:10px;
+    list-style-type:none;
+  grid-template-columns:85%;
+  grid-template-rows:14% 14% 14% 14% 14%;
+  grid-template-areas:
+    'li1'
+    'li2'
+    'li3'
+    'li4'
+    'li5';
+  color:white;
+}
+li{
+  background:#4d4d4d;border-radius:10px;
+display:flex;align-items:center;justify-content:center;
+}
+li:hover{background:hsl(75, 100%, 60%);}li a{color:white;font-weight:bold;}li:hover a{color:#1a1a1a;}
+li:first-child{grid-area:li1;}
+li:nth-child(2){grid-area:li2;}
+li:nth-child(3){grid-area:li3;}
+li:nth-child(4){grid-area:li4;}
+li:last-child{grid-arear:li5;}
+
+a{text-decoration:none;}
+
+    .attribution{text-align:center;}
+.attribution, .attribution a{
+  color:white;
+  margin-top:2%;
+}
+.attribution a{font-size:15px;color:blue;}
+  </style>
+</head>
+<body>
+  
+<div class="card">
+  <img src="https://www.blackbeautyandhair.com/wp-content/uploads/2023/05/good-faces-xmSWVeGEnJw-unsplash.webp" alt="">
+  <h1 class="text1">Bryan Phillip</h1>
+  <h3 class="text2">London, United Kingdom</h3>
+  <span class="text3">"Front-end developer and avid reader."</span>
+  <ul>
+    <li><a href="https://github.com/NoobBPS">GitHub</a></li>
+    <li><a href="https://www.frontendmentor.io/profile/NoobBPS">Frontend Mentor</a></li>
+    <li><a href="https://www.linkedin.com/in/bryan-phillip-sumarauw-a17002252/">LinkedIn</a></li>
+    <li><a href="https://twitter.com/BryanPh95042073">Twitter</a></li>
+    <li><a href="https://www.instagram.com/gray0boy/">Instagram</a></li>
+    </ul>
+    </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Bryan Phillip</a>.
+  </div>
+</body>
+</html>
